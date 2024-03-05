@@ -1,0 +1,20 @@
+@import "arrow.css";
+@import "color.css";
+@import "dinamicTex.css";
+@import "example.css";
+@import "footer.css";
+@import "gridMul.css";
+@import "languag.css";
+@import "logo.css";
+@import "navbar.css";
+@import "popupsimul.css";
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+

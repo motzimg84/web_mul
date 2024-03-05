@@ -1,0 +1,45 @@
+
+#languageSelector {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#languageOptions {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 30px;
+    justify-content: center;
+    padding: 12px 0px;
+    z-index: 1;
+}
+
+#languageOptions img {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.buttLangOpt {
+    border: 2px solid black; 
+    background:  var('--button-free'); 
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.buttLangOpt:hover {
+    transform: scale(1.1);
+    background-color: gray; 
+}
+
+.imgLangOpt {
+    height: 25px; 
+    margin-top: 5px;
+}

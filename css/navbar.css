@@ -1,0 +1,154 @@
+.navbar {
+    border: 2px solid black;
+    background-color: gray;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.container {
+    position: relative;
+    display: flex; /* Usamos flexbox para crear la división en columnas */
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.conteinterImag{
+    float: left;
+    height: 100%;
+}
+
+#contMenu{
+    height: 100px; 
+    padding: 0px;
+}
+
+
+.navbar-button {
+    width: 50px;
+    background-color: #f77d32;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    float: right;
+    top: 20px;
+    right: 75px;
+    z-index: 1000;
+}
+
+.navbarBut {
+
+    flex: 1;
+
+}
+
+.navbar-items {
+    width: 1200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item {
+    width: 200px;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: comic sans-serif;
+    font-weight: bold;
+    font-size: 16px; 
+    border: 2px solid #FFDA94;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: rgb(248, 219, 161);
+    font-size: 20px; 
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.navbar-img {
+    position: relative;
+    display: block; 
+    margin: 5px;
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    z-index: 900; /* Asigna un z-index alto para que la imagen esté siempre al frente */
+}
+
+@media screen and (max-width: 1270px) {
+    .navbar-items {
+        width: 900px;
+    }
+
+    .navbar-item {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        border: 2px solid Black;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .container{
+        margin-left: 50px;
+    }
+
+    .conteinterImag{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbarBut {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-items {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        display: flex;
+    }
+    
+    .navbar-items.show {
+        display: flex;
+    }
+    .navbar-item {
+        width: 250px;
+        margin: 5px;
+    }
+
+    .navbar-img {
+        width: 120px;
+        height: 50px; 
+    }
+}
